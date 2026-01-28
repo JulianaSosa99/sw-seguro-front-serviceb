@@ -1,0 +1,94 @@
+.login-success-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+}
+
+.login-success-card {
+  background-color: white;
+  padding: 70px 60px;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+}
+
+.login-success-checkmark {
+  font-size: 80px;
+  color: #27ae60;
+  margin-bottom: 20px;
+  line-height: 1;
+  animation: scaleIn 0.5s ease-out;
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.login-success-title {
+  color: #333;
+  font-size: 32px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+.login-success-message {
+  color: #666;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .login-success-card {
+    padding: 60px 50px;
+  }
+
+  .login-success-checkmark {
+    font-size: 70px;
+  }
+
+  .login-success-title {
+    font-size: 28px;
+  }
+
+  .login-success-message {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-success-container {
+    padding: 15px;
+  }
+
+  .login-success-card {
+    padding: 50px 30px;
+  }
+
+  .login-success-checkmark {
+    font-size: 60px;
+  }
+
+  .login-success-title {
+    font-size: 24px;
+  }
+
+  .login-success-message {
+    font-size: 14px;
+  }
+}
+
